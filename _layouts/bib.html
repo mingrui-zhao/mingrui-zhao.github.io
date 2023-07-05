@@ -102,8 +102,9 @@
                 "
             >{{more_authors_hide}}</span>
           {%- endif -%}
-
           </div>
+
+
 
           <!-- Journal/Book title and date -->
           {% assign proceedings = "inproceedings, incollection" | split: ','%}
@@ -196,4 +197,15 @@
           </div>
           {%- endif %}
         </div>
+
+        <div class="col-sm-3">
+          {%- if entry.teaser -%}
+            {% if entry.teaser contains '://' -%}
+            <img class="teaser" src="{{ entry.teaser }}">
+            {%- else -%}
+            <img class="teaser" src="{{ entry.teaser | prepend: '/assets/img/paper_teasers/' | relative_url }}">
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+        
       </div>

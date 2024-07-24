@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mingrui-zhao
+
+repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - mingrui-zhao/SweepNet
+  - roy-hachnochi/cross-domain-compositing

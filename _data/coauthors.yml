@@ -1,33 +1,33 @@
-"Mahdavi-Amiri":
+"mahdavi-amiri":
   - firstname: ["Ali", "A.", "Arash"]
     url: https://arash-mham.github.io/
 
-"Wang":
+"wang":
   - firstname: ["Yizhi", "Y."]
     url: https://yizhiwang96.github.io/
 
-"Yu":
+"yu":
   - firstname: ["Fenggen", "F."]
-    url: https://fenggenyu.github.io/s
+    url: https://fenggenyu.github.io/
 
-"Zou": 
+"zou": 
   - firstname: ["Changqing", "C."]
     url: https://changqingzou.weebly.com/
 
-"Hachnochi":
+"hachnochi":
   - firstname: ["Roy"]
 
-"Gal":
+"gal":
   - firstname: ["Rinon", "R."]
     url: https://rinongal.github.io/
 
-"Bermano":
+"bermano":
   - firstname: ["Amit Haim", "A. H."]
     url: https://www.cs.tau.ac.il/~amberman/
 
-"Cohen-Or":
+"cohen-or":
   - firstname: ["Daniel", "D."]
     url: https://danielcohenor.com/
 
-"Orzech":
-  - firstname: ["Nadav", "D."]
+"orzech":
+  - firstname: ["Nadav", "N."]

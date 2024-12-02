@@ -8,17 +8,57 @@ category: fun
 related_publications: false
 ---
 
+<style>
+.media-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="./assets/img/moments/puzzle_black.png" title="The most challenging black puzzle" class="img-fluid rounded z-depth-1" %}
+.media-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.media-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* Adjust this value to match your desired aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.media-wrapper img,
+.media-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+</style>
+
+<div class="media-container">
+  <div class="media-item">
+    <div class="media-wrapper">
+      {% include figure.liquid loading="eager" path="./assets/img/moments/puzzle_black.png" title="The most challenging black puzzle" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="./assets/img/moments/puzzle_color_cursor.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+  </div>
+  <div class="media-item">
+    <div class="media-wrapper">
+      {% include video.liquid path="./assets/img/moments/puzzle_color_cursor.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
+  </div>
 </div>
 <div class="caption">
-    The most challenging black and gradient puzzles, the missing piece made them together a color cursor!
+  The most challenging black and gradient puzzles, the missing piece made them together a color cursor!
 </div>
 
 <div class="row">

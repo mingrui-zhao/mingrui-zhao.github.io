@@ -10,15 +10,15 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: mingrui underscore zhao at sfu dot ca
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: true
+selected_papers: true
+social: true
 ---
 
-I am a second year Computing Science Master student at the Simon Fraser Univesrity under supervison of [Prof. Ali Mahdavi-Amiri](https://arash-mham.github.io/).
+I am a forthcoming Ph.D. student in the School of Computing Science at Simon Fraser University, working under the supervision of [Prof. Ali Mahdavi-Amiri](https://arash-mham.github.io/) and [Prof. Richard Zhang](https://www.cs.sfu.ca/~haoz/). My research focuses on Computer Graphics, with particular emphasis on Single View 3D Reconstruction, Primitive Fitting, and Generative Modeling.
 
-Before joining SFU, I was a Research Assistant at the Australian National Univesrity under the supervision of [Dr. Liang Zheng](https://zheng-lab.cecs.anu.edu.au/) and [Prof. Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/). Earlier than this, I completed my Bachelor's degree in Mechatronic Engineering (Research & Development) and Mathematical Sciences at the [Australian National University](https://www.anu.edu.au/). During my undergraduate studies at ANU, I was very fortunate to collaborate with [Prof. Stephen Gould](http://users.cecs.anu.edu.au/~sgould/) for my honors thesis.
+Previously, I completed my M.Sc. at Simon Fraser University under the supervision of [Prof. Ali Mahdavi-Amiri](https://arash-mham.github.io/). My master's research centered on sweep surfaces based shape abstraction.
 
-I have research interests in Single View 3D Reconstruction, primitive fitting, generative modeling and broad topics in Computer Graphics.
+Before joining SFU, I served as a Research Assistant at the Australian National University, where I worked with [Dr. Liang Zheng](https://zheng-lab.cecs.anu.edu.au/) and [Prof. Hongdong Li](http://users.cecs.anu.edu.au/~hongdong/) on plant digital twins modeling. I completed my undergraduate studies at the Australian National University with a dual degree in Mechatronic Engineering (Research & Development) and Mathematical Sciences. During this time, I had the privilege of working with [Prof. Stephen Gould](http://users.cecs.anu.edu.au/~sgould/) on my honors thesis, which explored linear programming integration into deep learning networks.
 
-At my spare time, I like doing jigsaw puzzles, playing badminton, swimming and hiking.
+Outside of academia, I enjoy solving jigsaw puzzles, playing badminton, swimming, and exploring hiking trails in British Columbia.

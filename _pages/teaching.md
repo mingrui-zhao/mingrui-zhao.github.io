@@ -25,4 +25,4 @@ nav_order: 5
 ### 2024
 [CMPT469/CMPT985](https://www.sfu.ca/outlines.html?2024/spring/cmpt/469/d100): Special topics in computer graphics, under [Prof. Andrea Tagliasacchi](https://theialab.ca/)
 
-[CMPT464/CMPT764](https://www.cs.sfu.ca/~haoz/teaching/cmpt464/index.html): Geometric Modeling in Computer Graphics, under [Prof. Richard Zhang](https://www.cs.sfu.ca/~haoz/)
+[CMPT464/CMPT764](https://www.cs.sfu.ca/~haoz/teaching/cmpt464/index.html): Geometric Modeling in Computer Graphics, under [Prof. Richard Zhang](https://www.cs.sfu.ca/~haoz/) [(Project Schedule)](/teaching/cmpt464-project/)

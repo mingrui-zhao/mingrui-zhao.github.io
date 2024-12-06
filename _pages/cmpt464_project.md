@@ -83,7 +83,7 @@ nav: false
     <p><strong>Course:</strong> CMPT464/764 Geometric Modelling</p>
     <p><strong>Date:</strong> December 9, 2024</p>
     <p><strong>Time:</strong> 10:00 AM - 12:30 PM</p>
-    <p><strong>Venue:</strong> TBD</p>
+    <p><strong>Venue:</strong> ASB 9703</p>
 </div>
 
 <div class="schedule">

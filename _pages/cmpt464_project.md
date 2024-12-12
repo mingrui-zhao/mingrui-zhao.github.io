@@ -1,65 +1,65 @@
 ---
 layout: page
 permalink: /teaching/cmpt464-project/
-title: CMPT464/764 Project Presentations
-description: Course Project Presentations Schedule
+title: CMPT464/764 Project Results
+description: Top 4 Project Results Showcase
 nav: false
 ---
 
 <style>
-    .header-info {
-        background-color: var(--global-bg-color);
-        border: 1px solid var(--global-divider-color);
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .schedule {
+    .results-container {
         margin-top: 2rem;
-        display: grid;
-        gap: 1rem;
     }
 
-    .time-block {
-        padding: 1.25rem;
+    .group-section {
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+        border: 1px solid var(--global-divider-color);
         border-radius: 8px;
         background-color: var(--global-bg-color);
-        border: 1px solid var(--global-divider-color);
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .time-block:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .group-section.gt {
+        border: 2px solid #28a745;
     }
 
-    .time {
-        font-weight: bold;
+    .group-title {
         color: var(--global-theme-color);
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid var(--global-divider-color);
+        border-bottom: 2px solid var(--global-divider-color);
     }
 
-    .team {
-        margin-left: 0.5rem;
+    .group-title.gt {
+        color: #28a745;
+        border-bottom: 2px solid #28a745;
     }
 
-    .team-name {
+    .videos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .video-title {
         font-weight: 600;
-        font-size: 1.05rem;
-        margin-bottom: 0.4rem;
-        color: var(--global-text-color);
+        margin-bottom: 0.5rem;
+        text-align: center;
     }
 
-    .members {
-        font-size: 0.9rem;
-        color: var(--global-text-color-light);
-        line-height: 1.4;
+    video {
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        max-height: 200px;
+        object-fit: cover;
     }
 
     .note {
@@ -72,102 +72,153 @@ nav: false
         color: var(--global-text-color-light);
     }
 
-    @media (hover: hover) {
-        .time-block:hover .time {
-            color: var(--global-hover-color);
+    /* Make videos stack on smaller screens but maintain reasonable size */
+    @media (max-width: 768px) {
+        .videos-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            margin: 1rem auto;
+        }
+        
+        video {
+            max-height: 300px;
         }
     }
 </style>
 
 <div class="header-info">
     <p><strong>Course:</strong> CMPT464/764 Geometric Modelling</p>
-    <p><strong>Date:</strong> December 9, 2024</p>
-    <p><strong>Time:</strong> 10:00 AM - 12:30 PM</p>
-    <p><strong>Venue:</strong> ASB 9703</p>
+    <p><strong>Date:</strong> December 11, 2024</p>
+    <p>Showcasing the top 4 performing groups' results regarding Chamfer Distance, 3D IoU, design originality and human perception, compared with ground truth models.</p>
 </div>
 
-<div class="schedule">
-    <div class="time-block">
-        <div class="time">10:00 AM - 10:15 AM</div>
-        <div class="team">
-            <div class="team-name">Team 3</div>
-            <div class="members">Alireza Moradi, Joy Xu, Spencer Leung</div>
+<div class="results-container">
+    <!-- Ground Truth -->
+    <div class="group-section gt">
+        <h2 class="group-title gt">Ground Truth Models</h2>
+        <div class="videos-grid">
+            <div class="video-container">
+                <div class="video-title">Fertility Model (GT)</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/gt/fertility.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Suzanne Model (GT)</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/gt/suzanne.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Torus Model (GT)</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/gt/torus_tri.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
-    <div class="time-block">
-        <div class="time">10:15 AM - 10:30 AM</div>
-        <div class="team">
-            <div class="team-name">Team 7</div>
-            <div class="members">Eric Chan, Siu Yu Chao, Tingyu Chen</div>
+    <!-- First Place -->
+    <div class="group-section">
+        <h2 class="group-title">First Place Results</h2>
+        <div class="videos-grid">
+            <div class="video-container">
+                <div class="video-title">Fertility Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/1st/fertility.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Suzanne Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/1st/suzanne.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Torus Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/1st/torus_tri.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
-    <div class="time-block">
-        <div class="time">10:30 AM - 10:45 AM</div>
-        <div class="team">
-            <div class="team-name">Team 1 (JJS)</div>
-            <div class="members">John Ordoyo, Silas Myrrh, Joshua Fantillo</div>
+    <!-- Second Place -->
+    <div class="group-section">
+        <h2 class="group-title">Second Place Results</h2>
+        <div class="videos-grid">
+            <div class="video-container">
+                <div class="video-title">Fertility Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/2nd/fertility.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Suzanne Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/2nd/suzanne.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Torus Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/2nd/torus_tri.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
-    <div class="time-block">
-        <div class="time">10:45 AM - 11:05 AM</div>
-        <div class="team">
-            <div class="team-name">Team 8 (The L.O.S.S. Function)</div>
-            <div class="members">Lachlan Ellis, Owen Coukell, Spencer Leslie, Stephen Ehebald</div>
+    <!-- Third Place -->
+    <div class="group-section">
+        <h2 class="group-title">Third Place Results</h2>
+        <div class="videos-grid">
+            <div class="video-container">
+                <div class="video-title">Fertility Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/3rd/fertility.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Suzanne Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/3rd/suzanne.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Torus Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/3rd/torus_tri.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
-    <div class="time-block">
-        <div class="time">11:05 AM - 11:20 AM</div>
-        <div class="team">
-            <div class="team-name">Team 4 (SweepNet)</div>
-            <div class="members">Matthew Zhao, Samuel Antunes Miranda, Isaac Ding</div>
-        </div>
-    </div>
-
-    <div class="time-block">
-        <div class="time">11:20 AM - 11:35 AM</div>
-        <div class="team">
-            <div class="team-name">Team 2 (A113)</div>
-            <div class="members">Aiden Carelse, Hou In Derek Pun, Amr Sharafeldin</div>
-        </div>
-    </div>
-
-    <div class="time-block">
-        <div class="time">11:35 AM - 11:50 AM</div>
-        <div class="team">
-            <div class="team-name">Team 6</div>
-            <div class="members">John Mitton, Kathy Lee, Ellie Neufeld</div>
-        </div>
-    </div>
-
-    <div class="time-block">
-        <div class="time">11:50 AM - 12:05 PM</div>
-        <div class="team">
-            <div class="team-name">Team 5</div>
-            <div class="members">Quang Minh Dinh, Ryan Zymiak, Jingtao Tang</div>
-        </div>
-    </div>
-
-    <div class="time-block">
-        <div class="time">12:05 PM - 12:25 PM</div>
-        <div class="team">
-            <div class="team-name">Team 9</div>
-            <div class="members">Zizheng Que, Yang Xu, Ke Wang, Xubin Wang</div>
-        </div>
-    </div>
-        <div class="time-block">
-        <div class="time">12:25 PM - 13:00 PM</div>
-        <div class="team">
-            <div class="team-name">Buffer time</div>
-            <div class="members">Spare time to buffer</div>
+    <!-- Fourth Place -->
+    <div class="group-section">
+        <h2 class="group-title">Fourth Place Results</h2>
+        <div class="videos-grid">
+            <div class="video-container">
+                <div class="video-title">Fertility Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/4th/fertility.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Suzanne Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/4th/suzanne.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <div class="video-title">Torus Model</div>
+                <video autoplay loop muted playsinline>
+                    <source src="{{ '/assets/videos/4th/torus_tri.mp4' | relative_url }}" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 </div>
 
-<p class="note">
-Note: For 3-person teams, presentations are 12 minutes with 3 minutes Q&A.<br>
-For 4-person teams, presentations are 16 minutes with 4 minutes Q&A.
-</p>
+<div class="note">
+    <p>Note: All results are presented anonymously to maintain fairness. The videos showcase the performance of each group's implementation on three standard test models: Fertility, Suzanne, and Torus. Ground truth models are provided at the top for comparison.</p>
+</div>

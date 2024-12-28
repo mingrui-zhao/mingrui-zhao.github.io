@@ -46,6 +46,7 @@ nav: false
 
     .video-container {
         width: 100%;
+        min-height: 200px;
     }
 
     .video-title {
@@ -54,12 +55,34 @@ nav: false
         text-align: center;
     }
 
+    .video-placeholder {
+        width: 100%;
+        height: 200px;
+        background: #f0f0f0;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .loading-text {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
     video {
         width: 100%;
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         max-height: 200px;
         object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    video.loaded {
+        opacity: 1;
     }
 
     .note {
@@ -72,7 +95,6 @@ nav: false
         color: var(--global-text-color-light);
     }
 
-    /* Make videos stack on smaller screens but maintain reasonable size */
     @media (max-width: 768px) {
         .videos-grid {
             grid-template-columns: 1fr;
@@ -99,19 +121,31 @@ nav: false
         <div class="videos-grid">
             <div class="video-container">
                 <div class="video-title">Fertility Model (GT)</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/gt/fertility.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Suzanne Model (GT)</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/gt/suzanne.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Torus Model (GT)</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/gt/torus_tri.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
@@ -124,19 +158,31 @@ nav: false
         <div class="videos-grid">
             <div class="video-container">
                 <div class="video-title">Fertility Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/1st/fertility.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Suzanne Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/1st/suzanne.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Torus Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/1st/torus_tri.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
@@ -149,19 +195,31 @@ nav: false
         <div class="videos-grid">
             <div class="video-container">
                 <div class="video-title">Fertility Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/2nd/fertility.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Suzanne Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/2nd/suzanne.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Torus Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/2nd/torus_tri.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
@@ -174,19 +232,31 @@ nav: false
         <div class="videos-grid">
             <div class="video-container">
                 <div class="video-title">Fertility Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/3rd/fertility.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Suzanne Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/3rd/suzanne.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Torus Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/3rd/torus_tri.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
@@ -199,19 +269,31 @@ nav: false
         <div class="videos-grid">
             <div class="video-container">
                 <div class="video-title">Fertility Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/4th/fertility.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Suzanne Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/4th/suzanne.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
             <div class="video-container">
                 <div class="video-title">Torus Model</div>
-                <video autoplay loop muted playsinline>
+                <div class="video-placeholder">
+                    <span class="loading-text">Loading video...</span>
+                </div>
+                <video loading="lazy" preload="none" autoplay loop muted playsinline
+                    onloadeddata="this.classList.add('loaded'); this.previousElementSibling.style.display='none';">
                     <source src="{{ '/assets/videos/4th/torus_tri.mp4' | relative_url }}" type="video/mp4">
                 </video>
             </div>
@@ -222,3 +304,27 @@ nav: false
 <div class="note">
     <p>Note: All results are presented anonymously to maintain fairness. The videos showcase the performance of each group's implementation on three standard test models: Fertility, Suzanne, and Torus. Ground truth models are provided at the top for comparison.</p>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const options = {
+        root: null,
+        rootMargin: '50px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const video = entry.target;
+                video.load();
+                observer.unobserve(video);
+            }
+        });
+    }, options);
+
+    document.querySelectorAll('video').forEach(video => {
+        observer.observe(video);
+    });
+});
+</script>

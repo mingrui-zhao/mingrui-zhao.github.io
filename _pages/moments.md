@@ -3,7 +3,7 @@ layout: page
 title: moments
 permalink: /moments/
 description: A collections of pictures I find touching in my life
-nav: true
+nav: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false

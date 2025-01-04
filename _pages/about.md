@@ -14,6 +14,6 @@ news: true
 selected_papers: true
 social: true
 ---
-I am a forthcoming Ph.D. student in Computing Science at Simon Fraser University, working with [Prof. Ali Mahdavi-Amiri](https://arash-mham.github.io/) and [Prof. Richard Zhang](https://www.cs.sfu.ca/~haoz/) on Computer Graphics research, focusing on Single View 3D Reconstruction, Primitive Fitting, and Generative Modeling.
+I am a Ph.D. student in Computing Science at Simon Fraser University, working with [Prof. Ali Mahdavi-Amiri](https://arash-mham.github.io/) and [Prof. Richard Zhang](https://www.cs.sfu.ca/~haoz/) on Computer Graphics research, focusing on Single View 3D Reconstruction, Primitive Fitting, and Generative Modeling.
 
 I completed my M.Sc. at SFU studying sweep surfaces based shape abstraction, and previously earned dual degrees in Mechatronic Engineering (R&D) and Mathematical Sciences from the Australian National University. In my free time, I enjoy jigsaw puzzles, badminton, swimming, and hiking.

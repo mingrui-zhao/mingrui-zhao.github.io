@@ -29,7 +29,7 @@ description: Temporary page to showcase video inbetweening results for the cours
     gap: 0.75rem;
     /* scoped variables */
     --gap: 0.75rem;
-    max-width: 70%;
+    max-width: 50%;
     margin: 0 auto;
   }
   .input-image {
@@ -62,6 +62,7 @@ description: Temporary page to showcase video inbetweening results for the cours
   .video-item { display: flex; flex-direction: column; align-items: center; }
 
   @media (max-width: 768px) {
+    .t-block { max-width: 90%; }
     .video-row { grid-template-columns: repeat(var(--cols, 4), minmax(120px, 1fr)); }
   }
 </style>

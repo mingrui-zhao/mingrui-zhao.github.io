@@ -5,6 +5,8 @@
 "wang":
   - firstname: ["Yizhi", "Y."]
     url: https://yizhiwang96.github.io/
+  - firstname: ["Kai", "K."]
+    url: https://kwang-ether.github.io/
 
 "yu":
   - firstname: ["Fenggen", "F."]
@@ -31,3 +33,23 @@
 
 "orzech":
   - firstname: ["Nadav", "N."]
+
+"zhang":
+  - firstname: ["Richard", "Hao","H."]
+    url: https://www.cs.sfu.ca/~haoz/
+  
+
+"vora":
+  - firstname: ["Aditya", "A."]
+    url: https://aditya-vora.github.io/
+
+"ji":
+  - firstname: ["Guangda", "G."]
+    url: https://quantaji.github.io/
+
+"chun":
+  - firstname: ["Peter", "P."]
+
+"nag":
+  - firstname: ["Sauradip", "S."]
+    url: https://sauradip.github.io/

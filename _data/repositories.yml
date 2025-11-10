@@ -6,3 +6,5 @@ repo_description_lines_max: 2
 github_repos:
   - mingrui-zhao/SweepNet
   - roy-hachnochi/cross-domain-compositing
+  - mingrui-zhao/4DRep-GMI
+  - mingrui-zhao/ACT-R

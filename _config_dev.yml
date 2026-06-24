@@ -1,0 +1,25 @@
+# Local-preview-only overrides. Use with:
+#   bundle exec jekyll serve --config _config.yml,_config_dev.yml
+# Excludes the demo Jupyter notebook so a local preview works without the
+# `jupyter` CLI installed. The deployed build (which has jupyter) is unaffected.
+exclude:
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - lighthouse_results/
+  - package.json
+  - package-lock.json
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - vendor
+  - archive/
+  - assets/jupyter/

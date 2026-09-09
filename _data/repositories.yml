@@ -4,7 +4,15 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - mingrui-zhao/SweepNet
-  - roy-hachnochi/cross-domain-compositing
-  - mingrui-zhao/4DRep-GMI
-  - mingrui-zhao/ACT-R
+  - name: mingrui-zhao/SweepNet
+    description: Unsupervised learning of shape abstractions via neural sweepers
+    language: Python
+  - name: roy-hachnochi/cross-domain-compositing
+    description: Cross-domain compositing with pretrained diffusion models
+    language: Jupyter Notebook
+  - name: mingrui-zhao/4DRep-GMI
+    description: Advances in 4D representation across geometry, motion, and interaction
+    language: Python
+  - name: mingrui-zhao/ACT-R
+    description: Adaptive camera trajectories for single-view 3D reconstruction
+    language: Python

@@ -191,6 +191,8 @@
       {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      {% elsif entry.abstract_coming_soon %}
+        <span class="btn btn-sm z-depth-0 disabled" title="Coming soon" aria-disabled="true">Abs</span>
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
@@ -229,6 +231,8 @@
       {% endif %}
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+      {% elsif entry.code_coming_soon %}
+        <span class="btn btn-sm z-depth-0 disabled" title="Coming soon" aria-disabled="true">Code</span>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
@@ -236,6 +240,8 @@
         {% else %}
           <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
         {% endif %}
+      {% elsif entry.poster_coming_soon %}
+        <span class="btn btn-sm z-depth-0 disabled" title="Coming soon" aria-disabled="true">Poster</span>
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
@@ -246,6 +252,8 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% elsif entry.website_coming_soon %}
+        <span class="btn btn-sm z-depth-0 disabled" title="Coming soon" aria-disabled="true">Website</span>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

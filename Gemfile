@@ -26,4 +26,5 @@ group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
+    gem 'ostruct' # required by jekyll-twitter-plugin on Ruby 4.0+ (no longer a default gem)
 end
